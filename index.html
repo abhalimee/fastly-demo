@@ -37,21 +37,38 @@
             font-size: 1.2em;
             line-height: 1.6;
             color: #555;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         .icon {
             font-size: 4em;
             color: #28a745; /* Success green */
             margin-bottom: 20px;
         }
-        .highlight {
-            font-weight: bold;
-            color: #d9534f; /* Error/Notice red for contrast */
+        .link-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.95em;
+        }
+        .link-section a {
+            display: block;
+            margin-bottom: 10px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .link-section a:hover {
+            text-decoration: underline;
         }
         footer {
-            margin-top: 40px;
+            margin-top: 20px;
             font-size: 0.9em;
             color: #888;
+        }
+        .service-id {
+            margin-top: 10px;
+            font-size: 0.85em;
+            color: #555;
         }
     </style>
 </head>
@@ -59,13 +76,17 @@
     <div class="container">
         <div class="icon">🚀</div>
         <h1>Content Delivered by Fastly!</h1>
-        <p>This file is:<br>
-        <span class="highlight">Originally hosted by GitHub Pages</span> (The Origin)<br>
-        <span class="highlight">Served via Fastly</span> (The Edge CDN)
-        </p>
-        <p>The Fastly edge network successfully fetched this file, and it is now being delivered to you efficiently.</p>
+        <p>This file is reliably delivered to you by the Fastly edge network.</p>
+        <div class="link-section">
+            <p><strong>Content Delivery Path:</strong></p>
+            <a href="https://abhalimee.github.io/fastly-demo/" target="_blank">1. The Origin Source (GitHub Pages)</a>
+            <a href="https://ahalimeefastlydemo.global.ssl.fastly.net/" target="_blank">2. Served via Fastly (The Edge CDN)</a>
+        </div>
         <footer>
             Service Hostname: ahalimeefastlydemo.global.ssl.fastly.net
+            <div class="service-id">
+                Fastly Service ID: <strong>OAGsL08xiDl3sO0rsHj1yU</strong>
+            </div>
         </footer>
     </div>
 </body>
