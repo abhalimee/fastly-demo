@@ -44,6 +44,10 @@
             color: #28a745; /* Success green */
             margin-bottom: 20px;
         }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f; /* Error/Notice red for contrast */
+        }
         footer {
             margin-top: 40px;
             font-size: 0.9em;
@@ -53,12 +57,15 @@
 </head>
 <body>
     <div class="container">
-        <div class="icon">✅</div>
-        <h1>Success! Content Delivered by Fastly!</h1>
-        <p>This beautifully designed page confirms that the file was successfully retrieved from your cloud origin and served efficiently by the Fastly edge network.</p>
-        <p>You've successfully set up your domain and backend through Fastly!</p>
+        <div class="icon">🚀</div>
+        <h1>Content Delivered by Fastly!</h1>
+        <p>This file is:<br>
+        <span class="highlight">Originally hosted by GitHub Pages</span> (The Origin)<br>
+        <span class="highlight">Served via Fastly</span> (The Edge CDN)
+        </p>
+        <p>The Fastly edge network successfully fetched this file, and it is now being delivered to you efficiently.</p>
         <footer>
-            &copy; 2023 Fastly Demo Setup
+            Service Hostname: ahalimeefastlydemo.global.ssl.fastly.net
         </footer>
     </div>
 </body>
